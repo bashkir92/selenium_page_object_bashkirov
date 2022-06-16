@@ -10,6 +10,3 @@ def test_yandex_tv_channel(browser):
     yandex_tv_page.go_to_films_and_serials()
     list_channel = yandex_tv_page.list_channel_films_and_serials()
     assert 'Кинохит' in list_channel, 'Данный канал отсутствует в списке'
-    assert 'Hollywood' in list_channel, 'Данный канал отсутствует в списке'
-    assert 'TV1000' in list_channel, 'Данный канал отсутствует в списке'
-    assert 'TV XXI' in list_channel, 'Данный канал отсутствует в списке'
